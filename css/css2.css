@@ -1,0 +1,54 @@
+*{
+    box-sizing: border-box;
+}
+.col-25{
+    float: left;
+    width: 25%;
+    /* /* margin: 6px 0; */
+    padding: 10px 0; 
+
+}
+.col-75{
+    float: left;
+    width: 75%;
+    margin: 6px 0 ;
+    /* padding: 6px; */
+}
+input,select,textarea{
+    width: 100%;
+    padding: 6px;
+    border: 1px solid rgb(198, 193, 193);
+    border-radius:2% ;
+
+}
+.container{
+    padding: 25px;
+    background-color: whitesmoke;
+    overflow: hidden;
+    border-radius: 1%;
+}
+button{
+    float: right;
+    padding: 6px;
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: #45a049;
+}
+
+
+@media screen and (max-width:500px){
+    .col-25,.col-75{
+        float: none;
+        width: 100%;
+    }
+    button{
+        float: none;
+        width: 100%;
+    }
+}

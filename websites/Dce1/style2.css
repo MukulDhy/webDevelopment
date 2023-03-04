@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.logo{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    width: 33%;
+    border: 3px solid white;
+    border-radius: 50px;
+}
+
+.navbar{
+    display: flex;
+}
+
+.nav-list{
+width: 50%;
+background-color: yellow;
+display: flex;
+/*justify-content:center;*/
+align-items: center;
+
+}
+
+.nav-list li{
+    list-style: none;
+    padding: 26px 30px;
+}
+
+.nav-list li a{
+    text-decoration: none;
+}
+
+.nav-list li a:hover{
+     display: flex;
+     text-decoration: none;
+     color: green;
+}
+
+.rightNav{
+    width: 50%;
+    background-color: aqua;
+    text-align: right;
+}

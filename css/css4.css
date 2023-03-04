@@ -1,0 +1,164 @@
+*{
+    box-sizing: border-box;
+    /* margin: 0; */
+}
+body{
+    /* background-color: rgb(255, 0, 0); */
+    background-color: red;
+}
+header{
+    background-color: white;
+    padding: 25px;
+    text-align: center;
+}
+.nav-bar{
+    overflow: hidden;
+    background-color: #333;
+}
+.nav-bar li{
+    float: left;
+}
+.nav-bar ul{
+    margin: 0;
+    padding: 0%;
+    list-style-type: none;
+}
+.nav-bar ul li a{
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    color: white;
+}
+.nav-bar ul li a:hover{
+    background-color: whitesmoke;
+    color: black;
+}
+.nav-bar ul li.login{
+    float: right;
+}
+
+.main-content{
+    /* position: relative; */
+    background-color:white;
+    width: 75%;
+    float: left;
+    padding: 25px;
+    /* margin: 10px 0; */
+    margin-top: 10px;
+}
+.image-area{
+    padding: 5px;
+    height: 200px;
+    background-color: rgba(128, 128, 128, 0.807);
+}
+.image-area p{
+    margin:16px;
+
+}
+.aboutMe{
+    /* float: left;
+    width: 25%;
+    padding: 25px;
+    padding-left: ;
+    margin: 10px 0;
+    margin-left:6px;
+    margin-top: 10px;
+    background-color:white; */
+    width: 25%;
+    float: left;
+    
+    
+}
+.aboutMe2{
+    /* float: left;
+    width: 25%;
+    padding: 25px;
+    padding-left: ;
+    margin: 10px 0;
+    margin-left:6px;
+    margin-top: 10px;
+    background-color:white; */
+    width: 25%;
+    float: right;
+    
+    
+}
+.content{
+    margin-top: 10px;
+    padding: 25px;
+    background-color:white;
+    margin: 10px;
+    
+    /* padding-left: ; */
+    /* margin: 10px 0; */
+    /* margin-left:6px; */
+
+}
+.aboutMe .image-area{
+    height: 100px;
+}
+.main-content2{
+    /* position: relative; */
+    background-color:white;
+    width: 75%;
+    /* float: left; */
+    padding: 25px;
+    /* margin: 10px 0; */
+    margin-top: 480px;
+    margin-right: 0;
+    margin-left: 0;
+}
+.aboutMe3{
+    position: relative;
+    top:-198px;
+    height: 200px;
+    float: right;
+    width: 25%;
+    margin-bottom:0px ;
+}
+.aboutMe3 .content{
+margin-bottom: 0%;
+}
+.footer{
+    position: relative;
+    bottom: 185px;
+    text-transform: capitalize;
+    /* font-size: 40px; */
+    font-weight: bold;
+    background-color: white;
+    padding: 25px;
+    margin-top: 200px;
+    text-align: center;
+    margin-right: 10px;
+}
+
+@media screen and (max-width:500px) {
+    .nav-bar li,.nav-bar ul li.login{
+        float: none;
+        text-align: center;
+    }
+   .col-25,.col-50{
+    float: none;
+    width: 100%;
+   } 
+   .col-25 h2,.col-50 h2{
+    /* float: none;
+    width: 100%; */
+    text-align: center;
+   } 
+   .main-content{
+    float: none;
+    width: 100%;
+   }
+   .aboutMe,.aboutMe2,.aboutMe3{
+    width: 33.33%;
+   }
+   .aboutMe3{
+    position: absolute;
+    top:867px;
+    left:140px;
+    height: 1000px;
+   }
+
+
+}

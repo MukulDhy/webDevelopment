@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+
+        }
+        .sideBar{
+            position: fixed;
+            display: block;
+            top: 0;
+            bottom: 0;
+            width: 40%;
+            /* left: 0; */
+            background-color: rgba(92, 89, 89, 0.733);
+        }
+        ul{
+            list-style-type: none;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-end;
+            margin: 0;
+            padding: 0;
+
+        }
+        ul li{
+            padding: 25px;
+            
+        }
+        ul li a{
+            display: block;
+            text-decoration: none;
+            font-size: 30px;
+            color: black;
+        }
+        .btn{
+            padding:12px;
+            border:2px solid black;
+            display: inline-block;
+            z-index: 100;
+            cursor: pointer;
+            background-color: aqua;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="sideBar">
+        <div class="btn" id="btn">Press Me</div>
+        <div class="menuBar">
+            <ul>
+                <li><a href="#">Link1</a></li>
+                <li><a href="#">Link2</a></li>
+                <li><a href="#">Link3</a></li>
+                <li><a href="#">Link4</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, rem fugiat hic voluptate dolorem maxime blanditiis! Iure quibusdam, illum ratione ipsa odit optio voluptatibus doloribus temporibus sunt, beatae, maxime vitae!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, rem fugiat hic voluptate dolorem maxime blanditiis! Iure quibusdam, illum ratione ipsa odit optio voluptatibus doloribus temporibus sunt, beatae, maxime vitae!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, rem fugiat hic voluptate dolorem maxime blanditiis! Iure quibusdam, illum ratione ipsa odit optio voluptatibus doloribus temporibus sunt, beatae, maxime vitae!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, rem fugiat hic voluptate dolorem maxime blanditiis! Iure quibusdam, illum ratione ipsa odit optio voluptatibus doloribus temporibus sunt, beatae, maxime vitae!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, rem fugiat hic voluptate dolorem maxime blanditiis! Iure quibusdam, illum ratione ipsa odit optio voluptatibus doloribus temporibus sunt, beatae, maxime vitae!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, rem fugiat hic voluptate dolorem maxime blanditiis! Iure quibusdam, illum ratione ipsa odit optio voluptatibus doloribus temporibus sunt, beatae, maxime vitae!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, rem fugiat hic voluptate dolorem maxime blanditiis! Iure quibusdam, illum ratione ipsa odit optio voluptatibus doloribus temporibus sunt, beatae, maxime vitae!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, rem fugiat hic voluptate dolorem maxime blanditiis! Iure quibusdam, illum ratione ipsa odit optio voluptatibus doloribus temporibus sunt, beatae, maxime vitae!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, rem fugiat hic voluptate dolorem maxime blanditiis! Iure quibusdam, illum ratione ipsa odit optio voluptatibus doloribus temporibus sunt, beatae, maxime vitae!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, rem fugiat hic voluptate dolorem maxime blanditiis! Iure quibusdam, illum ratione ipsa odit optio voluptatibus doloribus temporibus sunt, beatae, maxime vitae!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, rem fugiat hic voluptate dolorem maxime blanditiis! Iure quibusdam, illum ratione ipsa odit optio voluptatibus doloribus temporibus sunt, beatae, maxime vitae!</p>
+    </div>
+
+
+    <script>
+        let btn=document.getElementById('btn');
+
+        let sideBar=document.getElementsByClassName('sideBar');
+
+        btn.addEventListener("click",myFunction);
+       function myFunction(){
+        sideBar.style.width="400px";
+        }
+    </script>
+    
+</body>
+</html>

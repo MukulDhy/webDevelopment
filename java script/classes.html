@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+// sytax class
+// declaring a cass
+// class Product {
+//     constructor(itemName,Price,discount,productCode){
+//         this.itemName=itemName;
+//         this.Price=Price;
+//         this.discount=discount;
+//         this.productCode=productCode;
+
+//     }
+// }
+
+// const biscuit= new Product("Parle",10,2,"B01H");
+
+// console.log(biscuit);
+
+
+// Class Expression
+
+// const product_1= class  {
+//     constructor(itemName,Price,discount,productCode){
+//         this.itemName=itemName;
+//         this.Price=Price;
+//         this.discount=discount;
+//         this.productCode=productCode;
+        
+//     }
+//     get getDiscountValue(){
+//         return this.discount;
+//     }
+//     set setDiscountValue(value){
+//         this.discount=value;
+//     }
+//     discountValue(){
+//         return this.discount*this.Price/100;
+//     }
+
+// };
+
+// let pencil=new product_1("dabre",40,2,"P52");
+
+
+
+// console.log(pencil);
+
+
+
+
+
+//  Extending Class
+
+
+class Product {        //  parent
+    constructor(itemName){
+        this.itemName=itemName;
+    }
+    getItemName(){
+        return this.itemName + " is of Product Class "
+    }
+}
+
+// making child of product classes 
+
+class Furniture extends Product {   // child 
+    constructor(itemName){
+        super(itemName); // what will super did it calls the the parent constructor in this constructor of product is called.
+    }
+    getItemName(){
+        return this.itemName + " is of Furniture Class "
+    }
+}
+
+ 
+
+
+</script>
+</body>
+</html>

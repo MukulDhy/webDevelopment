@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>personal portfolio website</title>
+    <link rel="stylesheet"   href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatics.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=poppins:wght@300&
+         display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/
+         font-awesome/4.7.0/css/font-awesome.min.css">
+
+         <style>
+            html{scroll-behavior:smooth;}
+*{padding: 0; margin:0; box-sizing:border-box;
+}
+body{background:#0a3d62; font-family:'poppins',sans-serif; }
+header{
+    width:100%;
+    min-height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+
+
+
+}
+header img{
+    width:10rem;
+    height:auto;
+    border-radius: 50%;
+    
+}
+
+
+
+
+
+
+header h3{
+    color:white;
+    margin:1.5rem;
+    letter-spacing:0.2rem;
+    font: size 1.5rem;
+
+}
+header p{
+    color:white;
+}
+.container{
+    width:100%;
+   min-height:150vh;
+   display:grid;
+   grid-template-columns:1fr 1fr 1fr 1fr;
+   grid-template-rows:1fr 1fr 0.8fr 0.2fr;
+   gap:1rem;
+   grid-template-areas: "profile profile skills skills"
+                          " edu edu edu lang"
+                          "contact exp exp exp"
+                          "footer footer footer footer";
+                          padding:1rem;
+
+
+}
+.profile{
+    background:white;
+    color: black;
+    padding:2rem;
+    grid-area:profile;
+}
+.skills{
+    background:#3c6382;
+    color:white;
+    padding:2rem;
+    grid-area:skills;
+
+}
+.edu{
+    background:#3c6382;
+    color:white;
+    padding:2rem;
+    grid-area:edu;
+
+}
+.lang{
+    background:white;
+    color:0a3d62;
+    padding:2rem;
+    grid-area:lang;
+}
+.contact{
+    background:white;
+    color:0a3d62;
+    padding:2rem;
+    grid-area:contact;
+}
+.exp{
+    background:#3c6382;
+    color:white;
+    padding:2rem;
+    grid-area:exp;
+}
+footer{
+    background:#3c6382;
+    color:white;
+    padding:2rem;
+    grid-area:footer;
+
+}
+h2{
+    margin: 1rem;
+}
+.profile p{
+    padding: 0.3rem 1rem;
+    text-align: justify;
+    line-height: 2.2rem;
+
+}
+.profile a{
+    text-decoration:none;
+    padding:0.5rem 0.7rem;
+    background:#0a3d62;
+    color:white;
+}
+.skills div{
+    width: 100%;
+    padding: 0.5rem 1rem;
+
+}
+.skills div progress[value]{
+    width: 100%;
+    height: 1rem;
+}
+.edu h2{
+    letter-spacing: 0.1rem;
+
+}
+.edu p{padding: 0.3rem 1rem;
+    text-align: justify;
+    line-height: 2.2rem;
+
+}
+
+.edu a{text-decoration:none;
+    padding:0.5rem 0.7rem;
+    background:#0a3d62;
+    color:white;
+    font-weight: bold;
+
+}
+.lang h2{
+    letter-spacing: 0.1rem;
+    color: #0a3d62;
+}
+.lang ul{
+    margin: 1rem 0rem;
+    padding: 0.3rem 1rem;
+}
+.lang ul li{
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.contavt div{
+    margin-right: 0.2rem;
+
+}
+.contact p{
+    margin:1rem 0rem;
+    cursor: pointer;
+    
+}
+.exp p{
+    padding: 0.3rem 1rem;
+    text-align: justify;
+    line-height: 2.2rem;
+}
+         </style>
+
+
+</head>
+
+<body>
+    <header>
+        <img src="main-img.png">
+        <h3>Ashutosh</h3>
+        <p>FRONT END DEVELOPER</p>
+       
+    </header>
+    <div class="container">
+        <div class="profile"> 
+            <h2> My Profile</h2>
+            <p>Hello Guys!!</p>
+            <p>My name is<B>Ashutosh</B> and i am from farrukhnagar
+                ,haryana(India).I am a Btech student. I am prsuing my Btech from
+                 Dronacharya college of engineering,Gurugram(India).I am also a programmer and Btech student. 
+                 <br><br>
+                 <a href="">Read more</a>
+                 </p>
+
+            
+        </div>
+        <div class="skills">
+            <h2>My Skills</h2>
+        <div>
+            <label for="file">HTML</label>
+            <progress id="file" value="70" max="100">70%</progress></div>
+        <div>   <label for="file">CSS</label>
+            <progress id="file" value="65" max="100">65%</progress></div>
+         <div>   <label for="file">PYTHON</label>
+            <progress id="file" value="60" max="100">60%</progress></div>
+         <div>  <label for="file">C</label>
+            <progress id="file" value="78" max="100">78%</progress>
+        </div>
+        </div>
+        <div class="edu">
+            <h2>Education</h2>
+            <h2>MY QUALIFICATIONS</h2>
+            <p>My name is Ashutosh  and i am from farrukhnagar
+                ,haryana(India).I am a Btech student. I am prsuing my Btech from
+                 Dronacharya college of engineering,Gurugram(India).I am also a programmer and front end developer. 
+                 <br><br>
+                 <a href="">Download CV</a>
+            </p>
+        </div>
+        <div class="lang">
+            <h2>Languages</h2>
+            <ul>
+                IN WEB DESIGNING
+                <li>HTML</li>
+                <li>CSS</li>
+            </ul>
+            IN WEB DEVELOPMENT
+          <ul>  <li>C</li>
+            <li>PYTHON</li>
+            </ul>
+        </div>
+        <div class="contact">
+            <h2>Our contact</h2>
+            <div>
+            <p>
+                
+            <B>Address:</B> farrukhnagar<br> Gurugram(India)
+
+
+            </p>
+            <p>
+               
+          <b>Phone no:</b> 80768 10935
+                    </p>
+                    <p>
+                    
+           <b> Gmail id:</b> xyz@gmail.com
+                    </p>
+                    
+                    </div>
+        </div>
+        <div class="exp">
+            <h2>Achievements</h2>
+            <h3> I am very Happy to share</h3>
+            <P>
+                MY name is Ashutosh and i am from farrukhnagar,gurugram(India).
+                I am a Front end developer and a Programmer. I am pursuing my Btech from Dronacharya college of engineering, Gurugram(India).
+                I have got 7.9 SGPA in my first first semester. I have got 4 star rating on Hacker Rank.
+            </P>
+        
+        </div>
+        <footer>
+            
+            
+            
+            
+            
+            
+           <h3> Developed by Ashutosh</h3>
+        </footer>
+    </div>
+
+</body>
+
+</html>

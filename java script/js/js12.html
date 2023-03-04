@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Hello Pepps</h2>
+    <button id="btn">Try it</button>
+    <p id="demo"></p>
+    <p id="demo2"></p>
+    <script>
+        try{
+            let txt="Mukul is not good boy";
+            document.getElementById('demo').innerHTML=txt;
+        let btn=document.getElementById('btn');
+        btn.addEventListener('click',myFunction);
+        
+        }                                                       // why here is my Function is not working.
+        catch(err){
+            document.getElementById('demo2').innerHTML=err.message;
+        }
+        function myFunction(){
+        document.getElementById('demo').innerHTML=txt.replace('not','very');
+        }
+        
+        </script>
+</body>
+</html>

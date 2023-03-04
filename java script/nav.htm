@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav bar</title>
+    <style>
+            *{
+                margin: 0;
+                padding: 0;
+            }
+h2{
+    margin: 40px;
+    /* padding: 20px; */
+    /* border: 2px solid black; */
+}
+        ul{
+
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            background-color: #f1f1f1;
+
+
+        }
+        li{
+            /* display: inline; */
+            /* width: 100%; */
+            /* background-color:rgb(98, 109, 109); */
+            /* width: 100px; */
+            border: 1px solid black;
+        }
+        ul li a{
+            
+
+            font-size: 30px;
+            padding: 8px 16px ;
+            display: block;
+            text-decoration: none;
+            color: black;
+            text-align: center;
+            
+        }
+        ul li a:hover{
+            color: white;
+            /* background-color: grey; */
+        }
+        /* ul li a.red{
+            background-color: red;
+        }
+        ul li a.green{
+            background-color: green;
+        }
+
+        ul li a:hover:not(.red){
+            background-color: purple;
+            color: white;
+        } */
+        li a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+li a:hover:not(.active) {
+  background-color: red;
+  color: white;
+}
+    </style>
+</head>
+<body>
+    <h2>
+        Vertical Navigation Bar
+    </h2>
+<header>
+    <nav>
+        <div class="nav-list">
+            <ul>
+                <li> <a class=" active" href="#" >Home</a></li>
+                <li ><a  class="green" href="#">Contact</a></li>
+                <li ><a class=" red" href="#">News</a></li>
+                <li><a class="green" href="#">About</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+    
+    
+</body>
+</html> 

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+        p{
+            margin: 10px;
+        }
+        h2{
+            margin: 20px;
+        }
+        .navbar{
+            background-color: lightslategrey;
+            overflow: hidden;
+        }
+        .navbar ul li{
+            float: left;
+            padding: 0 15px;
+        }
+        .navbar ul{
+            list-style-type: none;
+        }
+        .navbar ul li a{
+            color: black;
+            font-weight: bolder;
+            font-size: larger;
+            padding: 20px;
+            display: block;
+            text-transform: uppercase;
+            text-decoration: none;
+        }
+        .navbar ul li.active{
+            background-color: green;
+            /* margin-left: 0; */
+        }
+        .navbar ul li:hover:not(.active){
+            background-color: rgb(255, 0, 0);
+        }
+        .navbar .right{
+            float: right;
+        }
+        @media screen and (max-width:600px){
+            .navbar ul li,.navbar .right{
+                float: none;
+            }
+            .navbar ul li a{
+                text-align: center;
+            }
+            
+        }
+
+        @media screen and (max-width:1000px){
+            .navbar{
+                /* max-width:400px;
+                height: 200vh; */
+                position: fixed;
+                width: 25%;
+                height: 100%;
+                overflow: auto;
+
+                /* float: left; */
+            }
+            .navbar ul li,.navbar .right{
+                float: none;
+            }
+            .navbar ul li a{
+                text-align: center;
+            }
+            
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <ul>
+            <li class="active"><a href="#">HOME</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">News</a></li>
+            <li class="right"><a href="#">contact</a></li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Responsive</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, architecto!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, architecto!</p>
+        <p style="font-weight: bold;"   >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, architecto!</p>
+    </div>
+
+</body>
+</html>

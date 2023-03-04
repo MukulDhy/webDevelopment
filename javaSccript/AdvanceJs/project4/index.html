@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Temperature</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #fff;
+            padding: 100px;
+            background: purple;
+
+        }
+        h1{
+            margin-left: 100px;
+            text-shadow: 0 0 3px #ffffff, 0 0 5px #b7b7e6;
+            font-size: 200px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- <h1>I am <br> Thermometer <i id="icon"> <i class="fa fa-thermometer-empty" aria-hidden="true"> &#xf2cb;</i> -->
+    <h1>I am <br> Thermometer <span id="icon" class="fa"></span>
+    </i></h1>
+
+
+
+    <script>
+
+        let icon = document.querySelector('#icon');
+        let num = 0; 
+
+        setInterval(() => {
+        
+            if(num === 0){
+                icon.innerHTML = "&#xf2cb";
+                icon.style.color = "red";
+                num++;
+            }
+            else if(num === 1){
+                icon.innerHTML = "&#xf2ca";
+                icon.style.color = "orange";
+                num++;
+            }
+            else if(num === 2){
+                icon.innerHTML = "&#xf2c9";
+                icon.style.color = "orange";
+                num++;
+            }
+
+            else if(num === 3){
+                icon.innerHTML = "&#xf2c8";
+                icon.style.color = "orange";
+                num++;
+            }
+            
+            else if(num === 4){
+                icon.innerHTML = "&#xf2c7";
+                icon.style.color = "red";
+                num=0;
+            }
+            console.log(num)
+            
+            
+
+
+        }, 1000);
+
+    </script>
+    
+</body>
+</html>

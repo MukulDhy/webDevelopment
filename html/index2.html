@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            display: flex;
+            /* background-color: lightseagreen; */
+            /* background-color: lightseagreen; */
+            font-size: 30px;
+            text-align: center;
+        }
+        .box{
+            /* margin-top: 100px; */
+            border-radius: 10%;
+            /* display: inline; */
+            background-color: lightseagreen;
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+    margin: 100px auto;
+}
+img{
+    width: 150px;
+    height: 150px;
+
+}
+.btn{
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 20%;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: red;
+    opacity: 0.5;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div  class = "box" id="div1">
+        <p class="heading">Visibility : hidden</p>
+        <img src="image/image (1).gif" alt="">
+        <p class="btn" id="btn1">Hide</p>
+    </div>
+    
+    <div class = "box" id="div2">
+        <p class="heading">display : none</p>
+        <img src="image/image (2).jpg" alt="">
+        <p class="btn" id="btn2">Remove</p>
+    </div>
+    
+    <div class = "box" id="div3">
+        <p class="heading">Reset All</p>
+        <img src="image/image (3).jpg" alt="">
+        <p class="btn" id="btn3">Reset all</p>
+    </div>
+    </div>
+<script>
+    let hide=document.getElementById('btn1');
+    let Remove=document.getElementById('btn2');
+    let Reset=document.getElementById('btn3');
+    
+    let box1=document.getElementById('div1');
+    let box2=document.getElementById('div2');
+    let box3=document.getElementById('div3');
+    
+    let body=document.querySelector('body');
+
+    hide.addEventListener('click',myFunction1);
+    Remove.addEventListener('click',myFunction2);
+    Reset.addEventListener('click',myFunction3);
+
+    // let num=0;
+    //  function myFunction(){
+    //      let All=[hide,Remove,Reset];
+    //     for(let i in All){
+    //     if(All[i]==hide){
+    //         num=0;
+    //     }
+    //     else if(All[i]==Remove){
+    //         num=1;
+    //     }
+    //     else{
+    //         num=3;
+    //     }
+        
+    //  }
+    // }
+    // function myFunction(){
+    //     for(let i in All){
+    //         // console.log(i);
+    //         if(){
+    //             box1.style.visibility='hidden';
+    //             break;
+    //         }
+    
+    //         else if(All[i]==Remove){
+        //             box2.style.display='none';
+        //             break;
+        //         }
+        //         else{
+            //             box1.style.visibility='visible';
+            //             box2.style.display='block';
+            //             break;
+            
+            //         }
+            //         // console.log(i); 
+            //     }
+            // }
+            
+            function myFunction1(){
+                    box1.style.visibility='hidden';
+                    
+                }
+                function myFunction2(){
+                    box2.style.display='none';
+                    // box1.style.visibility='hidden';
+        
+                }
+                function myFunction3(){
+                    box1.style.visibility='visible';
+                    box2.style.display='block';
+                    // box1.style.visibility='hidden';
+        
+}
+
+</script>
+</body>
+</html>

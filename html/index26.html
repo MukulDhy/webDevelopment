@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        h2 {
+            padding: 25px 0;
+            text-align: center;
+        }
+        
+        .hov {
+            padding: 25px;
+            background-color: blue;
+            color: white;
+        }
+        
+        
+        .content {
+            display: none;
+        }
+        .hov:hover {
+            /* background-color: rgba(96, 96, 227, 0.679); */
+            display: block;
+            background-color:pink;
+        }
+        </style>
+
+</head>
+
+<body>
+    <h2>Hover Change</h2>
+    <div class="hov">
+        <h4>Hover Me</h4>
+    </div>
+
+    <div class="content">
+        <h2>hllllll</h2>
+    </div>
+
+    <!-- <script>
+        let content = document.getElementById('content');
+        let hov = document.getElementById('hov');
+        // hov.addEventListener('cl', myFunction);
+
+        hov.addEventListener("mouseover",myFunction);
+        hov.addEventListener("mouseout",myFunction2);
+
+        function myFunction(){
+            // hov.style.color="black";
+            content.style.display="block";
+            // content.style.backgroundColor="black";
+        }
+        function myFunction2(){
+            // hov.style.color="black";
+            content.style.display="none";
+            // content.style.backgroundColor="black";
+        }
+    </script> -->
+</body>
+
+</html>

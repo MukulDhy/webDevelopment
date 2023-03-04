@@ -1,0 +1,22 @@
+.main{
+    display: flex;
+    /* justify-content: space-between; */
+}
+.card img{
+    width: 100%;
+    display: inline;
+}
+.card{
+    /* display: flex; */
+    flex-grow: 1;
+    margin: 5px;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.4);
+}
+.card .txt{
+    padding: 15px;
+}
+#c1{
+    align-self: stretch;
+    /* flex-basis:800px; */
+}
+

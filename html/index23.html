@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            
+
+        }
+        h2{
+            background-color: grey;
+            padding: 20px;
+        }
+        .menu{
+            width: 25%;
+            float: left;
+        }
+        .content{
+            width: 75%;
+            float: left;
+            padding: 20px;
+        }
+        .footer{
+            padding: 20px;
+            background-color: gray;
+        }
+        .clearfix::after{
+            content: "";
+            clear: both;
+            display: table;
+        }
+        .menu p{
+            padding: 10px;
+            background-color: lightskyblue;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Chaina</h2>
+    <div class="clearfix">
+    <div class="menu">
+        <p>The Fight</p>
+        <p>The city</p>
+        <p>The Island</p>
+        <p>The food</p>
+    </div>
+    <div class="content">
+        <h3>The City</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, vitae nostrum nam beatae iusto totam in illum officiis eaque commodi.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, facilis.</p>
+    </div>
+    </div>
+    <div class="footer">
+        <p>Footer</p>
+    </div>
+</body>
+</html>

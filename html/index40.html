@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .btn{
+            padding: 15px;
+            background-color: rgb(23, 92, 23);
+            color: white;
+            cursor: pointer;
+            border: none;
+
+        }
+        .btn:hover {
+            background-color: lightseagreen;
+        }
+        .btn:hover .content{
+            display: block;
+        }
+        .content{
+            position: absolute;
+            /* border: 1px solid black; */
+            box-shadow:2px 3px 2px 1px rgb(0, 0,0,0.3);
+            width: 25%;
+            background-color: whitesmoke;
+            display: none;
+            z-index: 1;
+        }
+        .content P{
+            /* border: 1px solid black; */
+            margin: 0;
+            padding: 16px;
+        }
+        .content p:hover{
+            background-color: rgb(104, 193, 72);
+        }
+    </style>
+</head>
+<body>
+    <h2>Drop Down Menu</h2>
+    <p>Move Your Mouse Over this ldasjkdaksjdksak</p>
+    <button class="btn">Hover Me</button>
+    <div class="content">
+        <p>Link1</p>
+        <p>Link2</p>
+        <p>Link3</p>
+    </div>
+    <p><strong>Note: We adjwndiawdibawidbiawbdiubawidbawibdbiawdiawab</strong></p>
+    
+</body>
+</html>

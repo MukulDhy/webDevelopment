@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .menubar {
+            display:inline-block;
+            /* background-color:whitew; */
+            /* overflow: hidden; */
+            cursor: pointer;
+            /* background-color: red; */
+        }
+        
+        .strip {
+            width: 35px;
+            height: 5px;
+            margin: 6px 0;
+            background-color: black;
+            transition: .5s ;
+        }
+        
+       .change #strip2 {
+            opacity:0;
+            /* visibility: hidden; */
+            /* display: none; */
+        }
+      .change #strip1{
+            /* -webkit-transform: rotate(45deg); */
+            /* -webkit-transform: rotate(45deg) translate(-9px,6px); */
+            transform: rotate(45deg) translate(5px,10px) ;
+            /* transform: translate(-9px,10px); */
+            /* color: red; */
+        }
+        .change #strip3{
+            transform: rotate(-45deg) translate(5px,-10px);
+        }
+    </style>
+</head>
+
+<body>
+    <p>Menu Bar</p>
+    <div class="menubar" onclick="myFunction(this)">
+        <div class="strip" id="strip1"></div>
+        <div class="strip" id="strip2"></div>
+        <div class="strip" id="strip3"></div>
+    </div>
+
+    <script src="/js/menubar.js"></script>
+</body>
+
+</html>

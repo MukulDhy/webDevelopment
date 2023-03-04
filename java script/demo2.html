@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hrmol</h1>
+
+
+    <script>
+
+        // Primitive datetype
+
+        let number=10;
+        // pass by value .
+        let number_2=number;
+        number=15;
+
+        // reference data type 
+        let obj={number:10,title:"java script"}
+        
+        let obj_2={number:10,title:"script"}
+        // pass by referene 
+        // it pass the adress of date type.
+        obj=obj_2
+        console.log(obj);
+        console.log(obj_2);
+
+        obj.number=23;
+
+        // in order to avoid dulication of object and elements. we need to use sperad operator
+
+
+        const course={
+            title:"javaScript",
+            enroll(){
+                console.log("Hello");
+            } 
+        }
+
+        const course_1={...course} // it copy the course elements line by line in course_1
+
+            course_1.title="c++";
+
+
+            // one more method to copy the object of js
+
+            const course_2= Object.assign({},course_1);
+
+
+            // *****************************
+
+            // loops in obejct 
+
+            //  for in method
+            for(let key in course){
+                console.log(key,course[key]);
+            } 
+            
+            // for of method 
+                                      
+            for(let key of Object.keys(course)){ // what will this object.keys do it convert the object in arrays like this ['title','enroll'];
+                console.log(key,course[key]);
+            }
+
+            
+            
+
+
+
+
+
+    </script>
+</body>
+</html>

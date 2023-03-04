@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/css1.css">
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    #div1{
+        padding: auto;
+        text-align: center;
+        color: aliceblue;
+        background-color: greenyellow;
+        padding: 10px;
+        border: 1px solid black;
+        cursor: pointer;
+        
+    }
+    #div2{
+        border: 1px solid black;    
+        /* align-items: center; */
+        /* justify-content: center; */
+        padding: 10px;
+        text-align: center;
+        color: aliceblue;
+        background-color: greenyellow;
+        /* height: 100px; */
+        display: none;
+
+    }
+
+</style>
+
+<body>
+    <div id="div1"><h2>cllick to show Panel</h2></div>
+    <hr>
+    <div id="div2"><h2>Bkl</h2>
+    <h1>bosdike</h1></div>
+    <div id="div3">
+        <h2>Bosdike nhi hai tu</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia quibusdam aliquid ad, eaque sapiente ducimus, aspernatur explicabo rerum vitae beatae quidem a neque sint blanditiis illum asperiores distinctio odit saepe.</p>
+    </div>
+
+    <script>
+        let btn=document.getElementById('div1');
+        let show=document.getElementById('div2');
+
+        btn.addEventListener('click',myFucntion);
+
+        function myFucntion(){
+
+            if(show.style.display=='none'){
+
+                show.style.display='block';
+            }
+            else{
+                show.style.display='none';
+
+            }
+            
+        }
+    
+    </script>
+</body>
+</html>

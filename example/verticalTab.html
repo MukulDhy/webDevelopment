@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .container{
+        border: 1px solid #ccc;
+        height: 400px;
+        display: flex;
+        
+    }
+    .rightSide{
+        background-color: whitesmoke;
+        /* border: 1px solid #ccc; */
+        width: 20%;
+        height: 100%;
+        /* flex-grow: 1; */
+    }
+    .btn{
+        /* bottom: unset; */
+        padding: 25px;
+        font-weight: bold;
+        font-size: 20px;
+        width: 100%;
+        display: block;
+        list-style-type: none;
+        text-decoration: none;
+        text-align: left;
+        border: none;
+        background-color: rgba(0, 0, 0, 0);
+
+    }
+    .LeftSide{
+        /* flex-grow: 1; */
+        padding: 0px 25px;
+        width: 80%;
+    }
+    .panel{
+        display: none;
+    }
+    .btn:hover,.active{
+        background-color: #ddd;
+    }
+    .notactive{
+        background-color:rgba(0, 0, 0, 0);
+    }
+    
+
+    
+
+
+    </style>
+</head>
+<body>
+    <h2>Vertical Tabs</h2>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus ratione doloribus consectetur impedit harum. Labore aliquid doloremque eius iure esse quas nesciunt sunt, magni inventore ullam quaerat omnis quo consequuntur?</p>
+
+    <div class="container">
+        <div class="rightSide"><button class="btn">London</button><button class="btn">Paris</button><button class="btn">India</button></div>
+
+        <div class="LeftSide">
+            <div class="panel">
+                <h2>London</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, dicta.</p>
+            </div>
+            <div class="panel">
+                <h2>Paris</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, vitae.</p>
+            </div>
+            <div class="panel">
+                <h2>India</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam, nihil.</p>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script>
+        let panel=document.getElementsByClassName('panel');
+        let btn=document.getElementsByClassName('btn');
+        
+
+        for(let i=0;i<btn.length;i++){
+            btn[i].addEventListener("click",myFunction);
+            panel[0].style.display="block";
+            
+            function myFunction(){
+                for(let j=0;j<panel.length;j++){
+                    if(j==i){
+                        btn[j].classList.toggle("active");
+                        panel[j].style.display="block";
+                    }
+                    else{
+                        btn[j].classList.toggle("notactive");
+                        panel[j].style.display="none";
+                        btn[i].classList.toggle("notactive");
+                    }
+                }
+            }
+        }
+
+    </script>
+</body>
+</html>

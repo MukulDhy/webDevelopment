@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            position: relative;
+        }
+        #box1{
+            position: relative;
+            
+            /* z-index: 1; */
+            /* z-index: -1; */
+            border: 1px solid black;
+            height: 100px;
+            /* width: 100%; */
+        }
+        
+        #box2{
+            position: absolute;
+            top: -15px;
+            /* z-index: 2; */
+            background-color: lightgreen;
+            width: 50%;
+            left: 25%;
+            /* align-items: center; */
+            height: 100px;
+            
+        }
+        #box3{
+            position: absolute;
+            top: 75px;
+            left: 20px;
+            /* z-index: 3; */
+            background-color: grey;
+            width: 75%;
+            margin: auto;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Z - index Examples</h2>
+    <p>dkjawndnwqkdkwqnidnqwkndkqwndnwqkindiqwnidnwqindiwqnd</p>
+
+    <div class="container">
+        <div id="box1"></div>
+        <div id="box2"></div>
+        <div id="box3"></div>
+    </div>
+</body>
+</html>

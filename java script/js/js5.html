@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Hellow GUyz</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus nihil ipsa asperiores. Labore distinctio doloremque cum corrupti expedita minima laboriosam suscipit quas quam ipsam, illo culpa, placeat ad optio fugit.</p>
+    
+    <p id="demo">
+
+    </p>
+
+    <script>
+        let Heading="cowmin";
+        let procedure=["Gas On","Boil Water","Gas off"];
+
+        let html=`<h2>${Heading}</h2>`;
+        let list=`<ul>`;
+        for(let key in procedure){
+            list=list+`<li>${procedure[key]}</li>`;
+        };
+        list+=`</ul>`;
+
+
+        document.getElementById('demo').innerHTML=html+list;
+
+
+
+
+        
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Clock</title>
+</head>
+<body>
+
+    <h2>Button Clock</h2>
+
+    <p>Click This Button to see Date and Time</p>
+    <button onclick="myFunction()">Click Me</button>
+
+    <p id="demo"></p>
+
+
+    <script>
+        let display = document.getElementById("demo");
+
+        function myFunction(){
+            let date = new Date(); 
+            display.innerHTML=date.toString();
+        }
+        
+    </script>
+</body>
+</html>

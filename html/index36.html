@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .container{
+        position: relative;
+        background-color:whitesmoke;
+        color: black;
+        font-size: larger;
+        /* padding: 25px; */
+        height: 400px;
+        text-align: center;
+        /* vertical-align: middle; */
+    }
+    .txt{
+        position: relative;
+        top: 40%;
+    }
+
+    .navbar ul{
+        position:-webkit-sticky;
+        
+        position: sticky;
+        top: 0%;
+        overflow: hidden;
+        list-style-type: none;
+        background-color: rgb(0, 0, 0);
+    }
+    /* ul{
+
+    } */
+    .navbar ul li{
+        float: left;
+        padding: 20px;
+    }
+    .navbar ul li a{
+        color: white;
+        text-decoration: none;
+        /* display: block; */
+    }
+    .active,.navbar li.active a {
+        color: black;
+        background-color: lightgreen;
+    }
+    .navbar ul li:hover:not(.active){
+        background-color: rgba(93, 59, 59, 0.564);
+    }
+
+
+    .section{
+    background-color: greenyellow;
+    height: 200vh;
+    padding: 20px;
+    }
+    .section p{
+    /* background-color: greenyellow;
+    height: 200vh; */
+    margin: 20px;
+    font-size: 20px;
+}
+.section h1{
+    /* background-color: greenyellow;
+    height: 200vh; */
+    margin: 20px;
+    font-size: 60px;
+    text-transform: uppercase;
+    text-align: center;
+    }
+
+</style>
+</head>
+<body>
+        <div class="container">
+            <div class="txt">
+            <h2>Scroool Down</h2>
+            <p>dwandkawjbdawbdjwbadiuawdowaidbiaw</p>
+            </div>
+        </div>
+        <div class="navbar">
+            <ul>
+                <li class="active"><a href="#">HOME</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">contact</a></li>
+                <li class="right"><a href="#">News    </a></li>
+            </ul>
+        </div>
+        <div class="section">
+            <h1>sticky</h1>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias, explicabo hic! Magnam consequuntur asperiores incidunt veritatis repellendus. Iusto animi sed, sint consequatur nostrum nemo perferendis ullam quaerat magni facilis odio explicabo maiores, ex minus rem at dolorem facere harum odit?</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias, explicabo hic! Magnam consequuntur asperiores incidunt veritatis repellendus. Iusto animi sed, sint consequatur nostrum nemo perferendis ullam quaerat magni facilis odio explicabo maiores, ex minus rem at dolorem facere harum odit?</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias, explicabo hic! Magnam consequuntur asperiores incidunt veritatis repellendus. Iusto animi sed, sint consequatur nostrum nemo perferendis ullam quaerat magni facilis odio explicabo maiores, ex minus rem at dolorem facere harum odit?</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias, explicabo hic! Magnam consequuntur asperiores incidunt veritatis repellendus. Iusto animi sed, sint consequatur nostrum nemo perferendis ullam quaerat magni facilis odio explicabo maiores, ex minus rem at dolorem facere harum odit?</p>
+            
+        </div>
+</body>
+</html>

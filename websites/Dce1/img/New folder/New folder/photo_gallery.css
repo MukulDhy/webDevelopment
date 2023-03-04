@@ -1,0 +1,31 @@
+header{
+    font-size: 50px;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+p{
+    font-size: 20px;
+}
+
+
+main{
+    margin-left:120px ;
+}
+
+.box{
+    display: block;
+    float: left;
+    width: 40;
+    padding: 10PX;
+    padding-left: 15PX;
+    border-radius: 8px;
+    overflow: hidden;
+}
+imG{
+    width: 150PX;
+    border-radius: 8px;
+}
+img:hover{
+    transform:scale(3,3);
+    transition:.3s transform;
+}

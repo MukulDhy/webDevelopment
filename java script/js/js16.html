@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Hello Good morning Pepps</h2>
+    <p id="demo"></p>
+    <script>
+    const Person={
+        name:"Mukul Dahiya",
+        age:18,
+        Freinds:[{name:"pooja",konsi:["Bansal","sharma","jaat"]},
+    {name:"satvik",konsi:["saini","CC","ptaaa Nhiii"]},
+{name:"Sakshii",konsi:["chhabara","yadav","aur Bkl"]}]
+    }
+
+    let txt="";
+
+    for(let i in Person.Freinds){
+            txt+=`<h2>${Person.Freinds[i].name}</h2>`;
+            txt+=`<ul>`;
+            for(let j in Person.Freinds[i].konsi){
+                txt+=`<li>${Person.Freinds[i].konsi[j]}</li>`;
+            }
+            txt+=`</ul>`;
+    }
+
+    document.getElementById('demo').innerHTML=txt;
+
+    </script>
+</body>
+</html>

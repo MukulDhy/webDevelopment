@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+      /* *{
+                margin: 0;
+                padding: 0;
+            } */
+
+            ul{
+                width: 25%;
+                height: 100%;
+                position: fixed;
+    
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    /* width: 100%; */
+    background-color: #f1f1f1;
+    
+    
+    }
+         ul li a{
+            
+
+            /* font-size: 30px; */
+            padding: 8px 16px ;
+            display: block;
+            text-decoration: none;
+            color: black;
+            text-align: center;
+            
+        }
+ul li a:hover:not(.active){
+            color: white;
+            background-color: grey;
+        }
+        li a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+.left{
+    float: left;
+    /* width: 75%; */
+    margin-left: 25%;
+}
+
+</style>
+<body>
+
+    <ul>
+        <li><a class = "active" href="#">Home</a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Home</a></li>
+    </ul>
+    <div class="left">
+    <h2>Fixed Full-height Side Nav</h2>
+    <h3>Try to scroll this area, and see how the sidenav sticks to the page</h3>
+    <p>Notice that this div element has a left margin of 25%. This is because the side navigation is set to 25% width. If you remove the margin, the sidenav will overlay/sit on top of this div.</p>
+    <p>Also notice that we have set overflow:auto to sidenav. This will add a scrollbar when the sidenav is too long (for example if it has over 50 links inside of it).</p>
+    <p>Some text..</p>
+    <p>Some text..</p>
+    <p>Some text..</p>
+    <p>Some text..</p>
+    <p>Some text..</p>
+    <p>Some text..</p>
+    <p>Some text..</p>
+</div>
+    
+</body>
+</html>

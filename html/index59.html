@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            position: absolute;
+            left:25%;
+            top:25%;
+            width: 100px;
+            height: 100px;
+            animation-name: Square ;
+            animation-duration:8s ;
+            background-color:red;
+        }
+        
+        
+        @keyframes Square {
+            0%{
+                transform: translate(0%,0%);
+                background-color: blue;
+            }
+            25%{
+                transform: translate(50%,0%);
+                background-color: purple;
+            }
+            50%{
+                transform: translate(50%,50%);
+                background-color: green;
+            }
+            75%{
+                transform: translate(-50%,50%);
+                background-color: pink;
+            }
+            100%{
+                /* transform: translate(-50%,-50%); */
+                background-color: orange;
+                /* transform: rotate(360deg); */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box"></div>
+    
+</body>
+</html>

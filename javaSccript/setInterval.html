@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>After clicking Wait for 1 minute</h1>
+    <button id="btn">Click Me</button>
+    <p id="show"></p>
+
+
+
+
+
+    <script>
+        let btn = document.querySelector("#btn");
+        let show = document.querySelector("#show");
+
+        btn.addEventListener("click" , myFunction);
+        let num = 0;
+        function myFunction(){
+          const setIntervalFunction =  setInterval(() => {
+                num++;
+                show.innerHTML = num;
+                if(num===20){
+                    clearInterval(setIntervalFunction);
+                 }
+            console.log(num);
+        },1000);
+    }
+
+    // clearInterval(setIntervalFunction)
+
+    </script>
+
+
+</body>
+</html>

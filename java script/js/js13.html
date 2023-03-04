@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>javaScript</h2>
+    <p>Please Input Your NUmber</p>
+    <input type="text" id="demo">
+    <button id ="btn" type="submit">Click me</button>
+    <p id="dem02"></p>
+
+    <script>
+        let btn=document.getElementById('btn');
+        btn.addEventListener('click',myFunction);
+        function myFunction(){
+            let inputType=document.getElementById('demo').value;
+
+            try{
+              if(inputType == "") throw "empty";
+              if(isNaN(inputType)) throw "Not a Number";
+                // inputType=Number(inputType); /// this line is doubnt
+              if(inputType<5) throw "Too low";
+              if(inputType>10) throw "Too high";
+
+        }
+        catch(err){
+            document.getElementById('dem02').innerHTML="INput is " + err;
+        }
+    }
+    </script>
+</body>
+</html>

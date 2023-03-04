@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+        <style>
+            .navbar{
+                position: relative;
+                /* display: inline-block */
+            }
+            .navbar ul{
+                background-color: rgb(34, 29, 29);
+                list-style-type: none;
+                overflow: hidden;
+                margin: 0;
+                padding: 0;
+
+            }
+            .navbar li{
+                float: left;
+            }
+            .navbar li a{
+                display: block;
+                text-decoration: none;
+                padding: 25px;
+                color: white;
+                text-transform: uppercase;
+                text-align: center;
+            }
+            .navbar li a:hover{
+                background-color: red;
+            }
+            .home-content,.about-content,.contact-content{
+                width: 160px;
+                /* border: 1px solid black; */
+                box-shadow: 1px 6px 26px 2px rgba(0, 0, 0, 0.4);
+                /* display: inline-block; */
+                z-index: 1;
+                display: none;
+                
+            }
+            .home-content{
+                position: absolute;
+                left: 0;
+                
+            }
+            .about-content{
+                position: absolute;
+                left: 97.11px;
+                
+            }
+            .contact-content{
+                position: absolute;
+                left: (124.28+97.11)px;
+
+            }
+            .home-content a,.about-content a,.contact-content a{
+                /* min-width: 160px; */
+                display: block;
+                padding: 16px;
+                text-align: center;
+                text-decoration: none;
+                color: black;
+                background: rgb(0, 0, 0);
+                font-size: 102%;
+
+            }
+            .home-content a:hover{
+              background-color: #ff0000;
+            }
+            .navbar #home:hover a ~ .home-content,.navbar #about:hover a ~ .about-content,.navbar #contact:hover a ~ .contact-content{
+                /* background-color: green; */
+                display: block;
+
+            }
+
+        </style>
+    </head>
+    <body>
+
+        <div class="navbar">
+            <ul>
+                <li id="home"><a href="#">home</a>
+                    <div class="home-content">
+                        <a href="">Manoj</a>
+                        <a href="">Tinku</a>
+                        <a href="">Mohit</a>
+                    </div>
+                </li>
+                <li id="about"><a href="#">about</a>
+                    <div class="about-content">
+                        <a href="">chutiya</a>
+                        <a href="">bc</a>
+                        <a href="">mc</a>
+                    </div></li>
+                <li id="contact"><a href="#">Contact</a>
+                    <div class="contact-content">
+                        <a href="">2091820</a>
+                        <a href="">T120312</a>
+                        <a href="">819237897131</a>
+                    </div></li>
+            </ul>
+<!-- 
+            <div class="home-content">
+                <a href="">Manoj</a>
+                <a href="">Tinku</a>
+                <a href="">Mohit</a>
+            </div>
+            <div class="about-content">
+                <a href="">chutiya</a>
+                <a href="">bc</a>
+                <a href="">mc</a>
+            </div>
+            <div class="contact-content">
+                <a href="">2091820</a>
+                <a href="">T120312</a>
+                <a href="">819237897131</a>
+            </div> -->
+        </div>
+
+    </body>
+</html>

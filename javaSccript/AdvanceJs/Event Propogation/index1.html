@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event propogation</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: lightblue;
+            height: 100vh;
+        }
+        .firstBox{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 400px;
+            width: 600px;
+            cursor: pointer;
+            border: 5px solid rgb(108, 175, 202);
+            background: lightskyblue;
+        }
+        .secondBox{
+            cursor: pointer;
+            width: 300px;
+            height: 200px;
+            border: 5px solid seagreen;
+            background: lightseagreen;
+
+        }
+    </style>
+</head>
+<body>
+
+    <div class="firstBox">
+        <div class="secondBox"></div>
+    </div>
+    
+<script>
+    let firstBox = document.querySelector(".firstBox");
+    let secondBox = document.querySelector(".secondBox");
+
+    /* For Bubbling By default */ 
+    // firstBox.addEventListener("click", () => {
+    //     alert("I am first Box")
+    // })
+
+    // secondBox.addEventListener("click", () => {
+    //     alert("I am Second Box")
+    // })
+
+
+    /* For capturing By default */ 
+    firstBox.addEventListener("click", () => {
+        alert("I am first Box")
+    },true); /* By Default it is False */
+
+    secondBox.addEventListener("click", () => {
+        alert("I am Second Box")
+    },true); /* By Default it is False */
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        *{
+            box-sizing: border-box;
+        }
+        form{
+            overflow: hidden;
+            background-color: whitesmoke;
+            padding: 25px;
+        }
+        .col-25{
+            width: 25%;
+            /* font-size: 15px; */
+            margin-top: 20px;
+            /* margin: 0px; */
+            /* border: 1px solid black; */
+            float: left;
+            /* display: inline-block; */
+            
+        }
+        /* .col-25 */
+        .col-75{
+            /* font-size: 15px; */
+            padding: 12px 12px 12px 0;
+            /* display: inline-block; */
+            /* margin-top: 20px; */
+            /* border: 1px solid black; */
+            width: 75%;
+            float: right;
+            display: inline-block;
+        }
+        .col-75 input,select,textarea,select option{
+            width: 100%;
+            padding: 12px;
+        }
+        button{
+            
+            float: right;
+        }
+        .clearfix{
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+    </style>
+</head>
+<body>
+    <h2>Responsive form</h2>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda cumque porro maxime commodi magni ipsam vero maiores iure saepe tempora.</p>
+    <div class="container">
+    <form action="#">
+
+        <div class="col-25">
+        <label for="Name">First Name :</label>
+        </div>    
+
+        <div class="col-75">
+        <input type="text" name="" id="">
+        </div>
+
+
+        <div class="col-25">
+        <label for="Name">Last Name : </label>
+        </div>    
+
+        <div class="col-75">
+        <input type="text" name="" id="">
+        </div>
+        
+        
+        <div class="col-25">
+            <label for="Name">Country : </label>
+        </div>    
+
+        <div class="col-75">
+            <select name="Country" id="">
+                <option value="India">India</option>
+                <option value="Uk">UK</option>
+                <option value="Dubia">Dubia</option>
+            </select>
+        </div>
+        
+                <div class="col-25">
+                <label for="Name">Subject : </label>
+                </div>    
+        
+                <div class="col-75">
+                    <textarea rows="" cols=""></textarea>
+                </div>
+                
+                <div class="clearfix"></div>
+
+        <button type="submit">Submit</button>
+    </form>
+    </div>
+</body>
+</html>

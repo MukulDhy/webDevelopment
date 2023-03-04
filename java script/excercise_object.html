@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Heloo</h1>
+    <script>
+        // using Normal Method of Objects
+        // let product={
+        //     itemName:"Allu",
+        //     price:20,
+        //     discount:"10%",
+        //     itemCode:"B601RTZ"
+        // }
+        // console.log(product);
+        
+        
+        
+        // Fctory Function
+        
+        // function creatcourse(name)
+        // {
+        //     return{
+        //         itemName:name,
+        //         price:20,
+        //         discount:"10%",
+        //         itemCode:"B601RTZ"
+                
+        //     }
+        // };
+        
+        // let product=creatcourse("Piyaz");
+        
+        // console.log(product);
+        
+        
+        
+        
+        // constructive Functions
+        
+
+        function CreateCourse(name,price){
+            this.itemName=name
+            this.price=price;
+            this.discount=5;
+            this.itemCode="B601RTZ";
+            this.totalamount=(price-((price*5))/100);
+        }
+
+        let Product=new CreateCourse("Shimla MIrcha",2000);
+        
+        console.log(Product);
+
+
+    </script>
+</body>
+</html>

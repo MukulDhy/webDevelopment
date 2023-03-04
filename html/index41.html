@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .left{
+        position: relative;
+        display: inline-block;
+        float: left;
+    }
+    .right{
+        position: relative;
+        display: inline-block;
+        float: right;
+    }
+    .btn{
+            padding: 15px;
+            background-color: rgb(23, 92, 23);
+            color: white;
+            cursor: pointer;
+            border: none;
+    }
+    .btn:hover {
+            background-color: lightseagreen;
+        }
+        .left-btn-content,.right-btn-content{
+            position: absolute;
+            right: 0;
+            /* display: block; */
+            /* border: 1px solid black; */
+            box-shadow:2px 3px 2px 1px rgb(0, 0,0,0.3);
+            /* width: 25%; */
+            min-width: 160px;
+            background-color: whitesmoke;
+            display: none;
+            z-index: 1;
+        }
+        .left-btn-content{
+         left: 0;   
+        }
+        .left-btn-content a,.right-btn-content a{
+            text-decoration: none;
+            /* margin: 0; */
+            display: block;
+            padding: 16px;
+            color: black;
+        }
+        .left-btn-content a:hover,.right-btn-content a:hover{
+            background-color: rgb(104, 193, 72);
+        }
+        .left:hover .left-btn-content , .right:hover .right-btn-content{
+            display: block;
+        }
+        .left:hover .btn , .right:hover .btn  {
+            background-color: lightseagreen;
+        }
+        
+    
+    </style>
+</head>
+<body>
+    <h2>Allign Button</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam sed eos iusto, officiis praesentium quo repellat odit. At fugiat dignissimos debitis saepe officia mollitia nam rerum accusantium! Accusamus, at neque.</p>
+
+
+
+    
+    <div class="left">        
+           <button class="btn">LEFT</button>
+        <div class="left-btn-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+        </div>
+    </div>
+
+
+
+
+    <div class="right">
+        
+            <button class="btn">RIGHT</button>
+        
+            <div class="right-btn-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+            </div>
+    </div>
+
+    
+</body>
+</html>

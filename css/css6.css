@@ -1,0 +1,60 @@
+.container .row1{
+    display: flex;
+
+}
+.container .row1 div {
+    /* width: 33.33%; */
+    /* height: 150px; */
+    margin: 2px;
+    color: white;
+    border-radius: 3px; ;
+    background-color: red;
+    flex-grow: 1;
+    padding: 5px;
+    /* padding: 2px; */
+}
+.container .row1 div.container2{
+    flex-basis: 50%;
+}
+
+
+.container .row2{
+    display: flex;
+
+}
+.container .row2 div {
+    /* width: 25%; */
+    flex-grow: 1;
+    /* height: 150px; */
+    margin: 2px;
+    color: white;
+    border-radius: 3px; ;
+    background-color: red;
+    padding: 7px;
+     /* padding: 2px; */
+}
+.container .row3{
+    display: flex;
+
+}
+.container .row3 div {
+    width: 25%;
+    /* height: 150px; */
+    margin: 2px;
+    color: white;
+    border-radius: 3px; ;
+    background-color: red;
+    padding: 7px;
+    flex-grow: 1;
+    /* padding: 2px; */
+}
+
+.container2 .col{
+    display: flex;
+
+}
+.container2 .col div{
+    background-color:black ;
+    flex-grow: 1;
+}
+

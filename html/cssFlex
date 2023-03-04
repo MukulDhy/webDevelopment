@@ -1,0 +1,24 @@
+flex-wrap-- it wrap all the content if the width is small it break the line nd put into second line
+
+
+order-- this propeerty change the flow of content or order 
+        this propeerty is used on flex items
+        syantax--
+        order : 
+
+
+flex-basis: width
+
+this property is used like max-width , in this we have given max width to an element if below the 200px it will automaticlly small down.
+
+
+flex-grow: how much times you wanted to grow this item;
+
+flex-grow is a type of min-width and will grow relative to other items
+
+
+flex-shirnk:  how much times you wanted to shirnk this item compared to other items
+
+
+
+

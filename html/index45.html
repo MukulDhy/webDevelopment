@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+            .image1,.image2,.image3,.image4{
+            /* box-sizing: border-box; */
+            /* float: left; */
+            border: 0.5px solid rgba(119, 136, 153, 0.605);
+            /* border-style: groove; */
+            /* margin: 10px; */
+            text-align: center;
+            overflow: hidden;
+            /* max-width: 100px; */
+        }
+        img{
+            width: 100%;
+        }
+        .responsive{
+            float: left;
+            padding: 5px;
+            width: 25%;
+
+        }
+        div.responsive div:hover{
+            border: 1px solid grey;
+        }
+
+        @media screen and (max-width:900px) {
+            .responsive{
+                width: 50%;
+            }
+        }
+        @media screen and (max-width:400px) {
+            .responsive{
+                width: 100%;
+            }
+        }
+
+
+        </style>
+    </head>
+    <body>
+        
+        <h2>Responsive Gllery</h2>
+
+        <p style="font-weight: bold;">Resize the Window Size</p>
+
+        <div class="galllery">
+
+            <div class="responsive">
+                <div class="image1">
+                    <a href="/image/img_5terre.jpg"><img src="/image/img_5terre.jpg" alt=""></a>
+                    <p>River View</p>
+                </div>
+            </div>
+
+            <div class="responsive">
+                <div class="image2">
+                    <a href="/image/img_forest.jpg"><img src="/image/img_forest.jpg" alt=""></a>
+                    <p>Forest View</p>
+                </div>
+            </div>
+
+            <div class="responsive">
+                <div class="image3">
+                    <a href="/image/img_lights.jpg"><img src="/image/img_lights.jpg" alt=""></a>
+                    <p>Light View</p>
+                </div>
+            </div>
+
+            <div class="responsive">
+                <div class="image4">
+                    <a href="/image/img_mountains.jpg"><img src="/image/img_mountains.jpg" alt=""></a>
+                    <p>Mountain View</p>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+    </body>
+</html>

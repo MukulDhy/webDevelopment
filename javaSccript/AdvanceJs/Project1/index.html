@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Population Real time Api</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: rgba(0, 0, 0, 0.5);
+            height: 100vh;
+        }
+        .box{
+            background: #fff;
+            border-radius: 2rem;
+            color: black;
+            width: 300px;
+            height: 400px;
+            transition: transform 0.2s linear;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            padding: 10px;
+        }
+        hr{
+            color: black;
+        }
+        .col-3 p:first-child {
+            font-weight: bold;
+        }
+        .box:hover{
+            transform: scale(0.8);
+        }
+        .row{
+            display: flex;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            column-gap: 10px;
+        }
+        .flag img{
+            padding: 25px;
+            width: 100%;
+        }
+        .country{
+            text-align: center;
+        }
+        .col-3{
+            
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box">
+    
+    </div>
+
+    <script>
+        const box = document.querySelector(".box");
+
+        const request = new XMLHttpRequest();
+
+        request.open('GET',"https://restcountries.com/v3.1/name/india?fullText=true");
+        request.send();
+        
+        request.addEventListener('load',function(){
+            // const Jsondata = request.responseText;
+            // console.log(Jsondata);
+
+            // const objData = JSON.parse(Jsondata);
+            // console.log(objData);
+            // const arrData = [objData];
+
+            // console.log(arrData);
+
+
+            const [orgData] = JSON.parse(request.responseText);
+
+            const htmlData = `
+ <div class="flag" id="flag">
+  <img src="${orgData.flags.png}" alt="">
+</div>
+<div class="country">
+    <h3 id="countryName">${orgData.name.common}</h3>
+    <p id="capital">Continents : ${orgData.continents}</p>
+</div>
+<hr>
+<div class="row">
+    <div class="col-3">
+        <p id="hindiName">${orgData.name.nativeName.hin.common}</p>
+        <p>Native Language</p>
+    </div>
+    <div class="col-3">
+        <p id="population">${orgData.population}</p>
+        <p>Population</p>
+    </div>
+    <div class="col-3">
+        <p id="language">${orgData.altSpellings[4]}</p>
+        <p>Hindi</p>
+    </div>
+</div>
+            `;
+    box.insertAdjacentHTML("afterbegin",htmlData);
+        })
+
+        
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>ApplicationForm</title>
+<link rel="stylesheet" href="stylesheet1.css">	
+
+<body>
+
+<header>Application Form</header>
+
+<strong>NOTE:</strong><p>Form is to be completed at least 21 days from date.</p>
+
+<form action="/action_page.php" style="width:100%";>
+
+    <fieldset>
+        <legend>Personal Details:</legend>
+<label for="fname">First Name:</label>
+<input type="text" id="fname" name="fname" placeholder="First name">
+<br>
+<label for="fname">Last name:</label>
+<input type="text" id="fname" name="fname" placeholder="Last name">
+<br>
+<label for="email">Email:</label>
+<input type="email" id="email" name="email" placeholder="Email">   
+<br>
+<label for="phone number">Phone number:</label>
+<input type="text" placeholder="Phone number">   
+<br>
+<label for="adress">Address:</label>
+<input type="text" placeholder="adress">   
+<br>
+<label for="gender">Gender:</label>
+<input type="radio">
+<label>Male</label>   
+<input type="radio">
+<label>FeMale</label>
+ <input type="radio">
+<label>others</label>  
+<br>
+<label for="iq">IQ:</label>
+<input type="range" placeholder="iq">
+<br>
+<label for="date">Date:</label>
+<br>
+<input type="date" min="2000-01-02" placeholder="select">
+    </fieldset>
+
+<br>
+
+    <fieldset>
+        <legend>Education</legend>
+        
+<label for="Qualification">Qualification:</label>
+<select name="qualication" id="dropdown">
+<option value="10th">10<sup>th</sup></option>  
+<option value="12th">12<sup>th</sup></option>
+<option value="Graduation">Gradution</option>
+<option value="post-Graduation">Post-Gradution</option>
+<option value="Nothing"></option>
+</select>
+</fieldset>
+
+<br>
+
+<fieldset>
+
+        <p>Check All in box below</p>
+<p>
+       <input type="checkbox" name="tattoo" value="tattoo"> I have tattoos and/or piercings<br>
+      <input type="checkbox" name="age" value="Car"> I am more than 2 years older than my daughter<br>
+      <input type="checkbox" name="car" value="car"> I own a panel van or V8 ute<br>
+      <input type="checkbox" name="work" value="work" > I work full-time<br>
+      <input type="checkbox" name="rich" value="rich" > My parents are rich<br>
+      <input type="checkbox" name="loc" value="loc" > Is the date at a well lit public location<br>
+    </p>
+
+
+
+    </fieldset>
+
+<br>
+
+ <button type="submit" id="submit">Send your application</button>
+</form>
+</body>
+</head>
+</html>

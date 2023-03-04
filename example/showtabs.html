@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .navbar{
+            background-color: whitesmoke;
+            border: 1px solid #ccc;
+            overflow: hidden;
+            
+        }
+        .heading{
+            display: inline-block;
+            padding: 15px;
+            float: left;
+            margin: 0;
+        }
+        .heading:hover,.active{
+            background-color: #ddd;
+        }
+        .content{
+            padding: 0px 15px;
+            border: 1px solid #ccc;
+            /* display: none; */
+            opacity: 0;
+            transition: opacity 0.5s ease;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <h2>Tabs</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis, ratione!</p>
+    <div class="navbar">
+        <div class="heading">London</div>
+        <div class="heading">Paris</div>
+        <div class="heading">India</div>
+    </div>
+    <div class="content">
+        <h2>London</h2>
+        <p>London is Good</p>
+    </div>
+    <div class="content">
+        <h2>Paris</h2>
+        <p>Paris is Also Good</p>
+    </div>
+    <div class="content">
+        <h2>India</h2>
+        <p>India is Baap</p>
+    </div>
+
+    <script>
+        let heading=document.getElementsByClassName('heading');
+        let content=document.getElementsByClassName('content');
+
+        for(let i=0;i<heading.length;i++){
+            
+            heading[i].addEventListener("click",myFunction);
+        
+        function myFunction(){
+            heading[i].classList.toggle("active");
+           
+
+            if(content[i].style.display=="block"){
+                content[i].style.display="none";
+                content[i].style.opacity="0";
+                
+            }
+            else{
+                content[i].style.opacity="1";
+                content[i].style.display="block";
+            }
+        }
+        }
+
+
+
+    </script>
+</body>
+</html>
